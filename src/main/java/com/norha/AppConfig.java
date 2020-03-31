@@ -25,7 +25,7 @@ public class AppConfig {
 	
 	@Bean("engineType")
 	public EngineType engineType() {
-		return new EngineType();
+		return new EngineType("V8 ENGINE");
 	}
 	
 	
