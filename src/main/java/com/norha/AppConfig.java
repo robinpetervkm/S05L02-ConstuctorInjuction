@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 
 import com.norha.cars.Corolla;
 import com.norha.cars.Swift;
-import com.norha.specs.V6;
-import com.norha.specs.V8;
+import com.norha.specs.EngineType;
+
 
 @Configuration
 @ComponentScan("com.norha")
@@ -23,14 +23,10 @@ public class AppConfig {
 		return new Swift();
 	} 
 	
-	@Bean("V6Engine")
-	public V6 v6() {
-		return new V6();
+	@Bean("engineType")
+	public EngineType engineType() {
+		return new EngineType();
 	}
 	
-	@Bean("V8Engine")
-	public V8 v8() {
-		return new V8();
-	}
 	
 }

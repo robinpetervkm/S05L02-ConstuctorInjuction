@@ -11,7 +11,7 @@ import com.norha.interfaces.Engine;
 public class Corolla implements Car {
 
 	@Autowired 
-	@Qualifier("V6Engine")
+	@Qualifier("engineType")
 	Engine engine;
 	
 
